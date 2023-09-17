@@ -1,0 +1,98 @@
+/*tabs*/
+.tabs {
+    &__content {
+        display: none;
+    }
+    &__content.active {
+        display: block;
+    }
+    &__swith {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        overflow: auto;
+    }
+    &__swith_item {
+        white-space: nowrap;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: $grey-text;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: normal;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    & li .active{
+        margin-left: 15px;
+        background: var(--gradient-text-red-reversed, linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__content_title {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        max-width: 315px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &__content_text {
+        color: #FFF;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+        max-width: 315px;
+        margin-bottom: 30px;
+    }
+}
+ @media (min-width: 768px){
+    .tabs {
+        &__swith_item {
+            font-size: 38px;
+            margin-right: 90px;
+            margin-bottom: 60px;
+        }
+        &__content_title {
+            font-size: 30px;
+            max-width: 650px;
+            margin-top: 60px;
+        }
+        &__content_text {
+            max-width: 650px;
+            margin-bottom: 60px;
+        }
+    }
+ }
+ @media (min-width: 992px){
+    .tabs {
+        display: flex;
+        justify-content: center;
+        &__swith {
+            flex-direction: column;
+            text-align: right;
+            border-right: 4px solid rgba(255, 255, 255, 0.30);
+            height: 303px;
+            &_item {
+                margin-bottom: 33px;
+            }
+        }
+
+        &__content {
+            padding-left: 60px;
+            &_title {
+            font-size: 30px;
+            max-width: 405px;
+            margin-top: auto;
+            }
+            &_text {
+            max-width: 405px;
+            }
+        }
+    }
+}

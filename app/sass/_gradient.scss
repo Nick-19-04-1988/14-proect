@@ -1,0 +1,41 @@
+/*gradient */
+.gradient {
+    height: auto;
+    background:url(../img/h.svg) no-repeat center top,
+             var(--gradient-supersoft, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%));
+    border-radius: 0 0 12px 12px;
+    position: relative;
+    &::after {
+        content: '';
+        border-radius: 0 0 12px 12px;
+        background: #CACADB;
+        height: 10px; 
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+    }
+    &::before {
+        content: '';
+        border-radius: 0 0 12px 12px;
+        background: #CACADB;
+        height: 10px;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+        background: #E7E7F2;
+    }
+}
+@media (min-width: 768px){
+    /*gradient */
+    .gradient {
+        background-size: 893px 1024px, cover;
+    }
+}
+@media (min-width: 992px){
+    /*gradient */
+    .gradient {
+        background-size: 670px 768px, cover;
+    }
+}

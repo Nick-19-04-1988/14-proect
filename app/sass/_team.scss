@@ -1,0 +1,15 @@
+.team { position: absolute;
+    &__text {
+        color: var(--basic-white, #FFF);
+        text-align: center;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.80);
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 13px;
+        text-transform: uppercase;
+        opacity: 0.8;
+        position: relative;
+        top: 100px;
+        left: 100px;
+    }
+}

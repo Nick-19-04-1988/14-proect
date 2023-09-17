@@ -1,0 +1,143 @@
+.footer {
+    background-color: #F5F5FA;
+    padding: 30px 0 30px 0;
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        gap: 21px;
+        &_adress {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-street {
+                color: #323264;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+                border-top: 2px solid #E6E6F0;
+                padding-top: 30px;
+            }
+            &-map {
+                display: block;
+                color: $active-regular;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                text-decoration: none;
+                margin-top: 10px;
+                &:hover {
+                    color: #F0145A;
+                }
+            }
+        }
+        &_connection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & a {
+                display: block;
+                margin-bottom: 10px;
+                text-decoration: none;
+            }
+            &-tel {
+                color: #46466E;
+                text-align: right;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: normal;
+            }
+            &-mail {
+                color: #24A3FF;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: normal;
+                &:hover {
+                    color: #F0145A;
+                }
+            }
+
+        }
+        &_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #B3B3BA;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+.fb g:hover path {
+    fill: #F0145A;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        &__grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: min-content min-content;
+            &_connection {
+                grid-column: -3 / -2;
+                flex-direction: row;
+                &-tel{
+                    &::after{
+                        content: '';
+                        display: inline-flex;
+                        width: 6px;
+                        height: 6px;
+                        background-color: #B3B3BA;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        margin-top: 7px;
+                    }
+                    &::before {
+                        content: '';
+                        display: inline-flex;
+                        width: 6px;
+                        height: 6px;
+                        background-color: #B3B3BA;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        margin-top: 7px;
+                    }
+                }
+            }
+            &_text {
+                grid-row: 2/-3;
+                grid-column: 2/3;
+                flex-direction: row-reverse;
+            }
+            &_adress {
+                flex-direction: row;
+                &-street {
+                    padding-top: 0px;
+                    border-top: none;
+                    display: inline-flex;
+                    &::after {
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        background-color: #B3B3BA;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        margin-top: 7px;
+                    }
+                }
+                &-map {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {}

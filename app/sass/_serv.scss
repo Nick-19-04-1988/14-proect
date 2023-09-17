@@ -1,0 +1,26 @@
+.serv {
+    &__link{
+        text-decoration: none;
+        color: var(--active-regular, #24A3FF);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 78px;
+            top: 3px;
+            background-image: url(../img/serwarow.svg);
+            width: 12px;
+            height: 12px;
+            background-size: 12px 12px;
+            background-repeat: no-repeat;
+        }
+    }
+    & a:hover {
+        color: $accent;
+    }
+}
