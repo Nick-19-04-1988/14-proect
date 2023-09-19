@@ -10,14 +10,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            border-top: 2px solid #E6E6F0;
+            width: 100%;
+            padding-top: 30px;
             &-street {
                 color: #323264;
                 font-family: Montserrat;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: normal;
-                border-top: 2px solid #E6E6F0;
-                padding-top: 30px;
             }
             &-map {
                 display: block;
@@ -29,6 +30,8 @@
                 text-transform: uppercase;
                 text-decoration: none;
                 margin-top: 10px;
+                transition-duration: 300ms;
+                transition-property: color;
                 &:hover {
                     color: #F0145A;
                 }
@@ -55,6 +58,8 @@
                 font-size: 16px;
                 font-weight: 700;
                 line-height: normal;
+                transition-duration: 300ms;
+                transition-property: color;
                 &:hover {
                     color: #F0145A;
                 }
@@ -80,11 +85,75 @@
 @media (min-width: 768px) {
     .footer {
         &__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, min-content);
+            gap: 21px;
+            &_connection {
+                flex-direction: row;
+                justify-content: center;
+                &-tel{
+                    &::after{
+                        content: '';
+                        display: inline-flex;
+                        width: 6px;
+                        height: 6px;
+                        background-color: #B3B3BA;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        margin-top: 7px;
+                    }
+                    &::before {
+                        content: '';
+                        display: inline-flex;
+                        width: 6px;
+                        height: 6px;
+                        background-color: #B3B3BA;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        margin-top: 7px;
+                    }
+                }
+            }
+            &_adress {
+                flex-direction: row;
+                justify-content: center;
+                &-street {
+                    padding-top: 0px;
+                    display: inline-flex;
+                    &::after {
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        background-color: #B3B3BA;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        margin-top: 7px;
+                    }
+                }
+                &-map {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .footer {
+        &__grid {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: min-content min-content;
+            border-top: 2px solid #E6E6F0;
+            width: 100%;
+            padding-top: 30px;
             &_connection {
                 grid-column: -3 / -2;
                 flex-direction: row;
+                justify-content: flex-start;
                 &-tel{
                     &::after{
                         content: '';
@@ -117,6 +186,9 @@
             }
             &_adress {
                 flex-direction: row;
+                justify-content: flex-start;
+                border-top: none;
+                padding-top: 0;
                 &-street {
                     padding-top: 0px;
                     border-top: none;
@@ -139,5 +211,3 @@
         }
     }
 }
-
-@media (min-width: 992px) {}

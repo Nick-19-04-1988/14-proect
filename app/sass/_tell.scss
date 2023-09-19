@@ -3,6 +3,8 @@
     padding-top: 30px;
     &__pub {
         margin-bottom: 5px;
+        transition-duration: 300ms;
+        transition-property: color;
         &_link{
             text-decoration: none;
             color: var(--active-regular, #24A3FF);
@@ -64,6 +66,8 @@
                     display: inline-block;
                     text-decoration: none;
                     color: #24A3FF;
+                    transition-duration: 300ms;
+                    transition-property: color;
                     &:hover {
                         color: #F0145A;
                     }

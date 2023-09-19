@@ -8,6 +8,8 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         position: relative;
+        transition-duration: 300ms;
+        transition-property: color;
         &::after {
             content: '';
             position: absolute;

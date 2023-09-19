@@ -18,12 +18,16 @@
             font-size: 16px;
             font-weight: 700;
             text-decoration: none;
+            transition-duration: 300ms;
+            transition-property: color;
             &:hover {
                 color: #F0145A;
             }
         }
         &_fb {
             display: none;
+            transition-duration: 300ms;
+            transition-property: fill;
             &:hover path {
                 fill: #F0145A;
             }
@@ -66,12 +70,16 @@
             font-weight: 700;
             line-height: normal;
             text-decoration: none;
+            transition-duration: 300ms;
+            transition-property: color;
             &:hover {
                 color: #F0145A;
             }
         }
         &_fb {
             display: none;
+            transition-duration: 300ms;
+            transition-property: fill;
             &:hover path {
                 fill: #F0145A;
             }
@@ -92,6 +100,8 @@
             text-decoration: none;
             padding: 5px 7px;
             border-radius: 8px;
+            transition-duration: 300ms;
+            transition-property: background-color;
             &:hover {
                 background-color:rgba(255, 255, 255, 0.20);
             }
@@ -146,6 +156,8 @@
                 text-align: center;
                 width: 100%;
                 margin-bottom: 15px;
+                transition-duration: 300ms;
+                transition-property: background-color, color;
                 &:hover {
                     color: red;
                     background-color:#E6E6F0;
@@ -199,6 +211,8 @@
                 display: block;
                 text-align: center;
                 width: 100%;
+                transition-duration: 300ms;
+                transition-property: background-color, color;
                 &:hover {
                     color: red;
                     background-color: rgba(255, 255, 255, 0.20);
@@ -219,6 +233,8 @@
             border: none;
             padding: 5px 7px;
             border-radius: 8px;
+            transition-duration: 300ms;
+            transition-property: background-color;
             &:hover {
                 background-color:rgba(255, 255, 255, 0.20);
             }
@@ -369,6 +385,8 @@
                     line-height: normal;
                     margin-right: 15px;
                     background-color: transparent;
+                    transition-duration: 300ms;
+                    transition-property: background-color;
                     &:hover {
                         background-color: transparent;
                     }
@@ -402,7 +420,7 @@
 }
 @media (min-width: 992px) {
     .header{
-        grid-template-columns: min-content 1fr;
+        grid-template-columns: max-content 1fr;
         grid-template-rows: min-content min-content;
         &__info-about{
             grid-column: 2 / -1;
@@ -418,7 +436,7 @@
             grid-row: 1 / -1;
             &_page {
                 &::before{
-                    width: 28px;
+                    width: 21px;
                 }
             }
         }
