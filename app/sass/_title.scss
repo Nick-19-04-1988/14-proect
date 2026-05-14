@@ -31,8 +31,11 @@
     .title {
         &__text {
             width: 100%;
-            padding-top: 269px;
-            padding-bottom: 417px
+            padding-top: 220px;
+            padding-bottom: 240px;
+        }
+        &__logo {
+            padding-bottom: 10px;
         }
     }
 }

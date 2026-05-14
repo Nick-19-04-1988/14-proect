@@ -46,6 +46,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
@@ -609,13 +613,13 @@
 @media (min-width: 768px) {
   /*gradient */
   .gradient {
-    background-size: 893px 1024px, cover;
+    background-size: 670px 768px, cover;
   }
 }
 @media (min-width: 992px) {
   /*gradient */
   .gradient {
-    background-size: 670px 768px, cover;
+    background-size: 893px 1024px, cover;
   }
 }
 .title {
@@ -656,8 +660,11 @@
 @media (min-width: 768px) {
   .title__text {
     width: 100%;
-    padding-top: 269px;
-    padding-bottom: 417px;
+    padding-top: 220px;
+    padding-bottom: 240px;
+  }
+  .title__logo {
+    padding-bottom: 10px;
   }
 }
 @media (min-width: 992px) {
@@ -1767,6 +1774,11 @@
     display: block;
   }
   .achiev__grid_btn button:nth-child(odd) {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .achiev__grid_btn {
     display: none;
   }
 }
