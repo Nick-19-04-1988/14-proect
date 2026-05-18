@@ -1,5 +1,5 @@
 .achiev {
-    background-color: #F5F5FA;
+    background-color: #f5f5fa;
     margin-bottom: -30px;
     &__grid {
         display: grid;
@@ -18,7 +18,7 @@
             text-align: center;
             & picture {
                 border-radius: 12px;
-                background: #FFF;
+                background: #fff;
                 padding: 30px;
                 width: 100%;
                 display: none;
@@ -31,22 +31,22 @@
             margin-top: 30px;
             padding-bottom: 30px;
             & button {
-            width: 16px;
-            height: 16px;
-            background-color: #cde6f8;
-            border-radius: 50%;
-            cursor: pointer;
-            margin-right: 15px;
-            transition-duration: 300ms;
-            transition-property: background-color;
+                width: 16px;
+                height: 16px;
+                background-color: #cde6f8;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-right: 15px;
+                transition-duration: 300ms;
+                transition-property: background-color;
                 &:hover {
-                background-color: #24A3FF;
+                    background-color: #24a3ff;
                 }
             }
         }
     }
 }
-@media (min-width: 768px) {
+@media (min-width: $bp-tablet) {
     .achiev {
         &__grid {
             &_box {
@@ -66,7 +66,7 @@
         }
     }
 }
-@media (min-width: 992px) {
+@media (min-width: $bp-desktop) {
     .achiev {
         &__grid {
             &_btn {

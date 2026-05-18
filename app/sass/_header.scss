@@ -6,14 +6,14 @@
         grid-column: 1 / -1;
         display: flex;
         justify-content: space-between;
-        background: #F5F5FA;
+        background: #f5f5fa;
         margin: 0 -15px;
         padding: 10px 15px;
         &_adress {
             display: none;
         }
         &_phone {
-            color:#B3B3BA;
+            color: #b3b3ba;
             text-align: right;
             font-size: 16px;
             font-weight: 700;
@@ -21,7 +21,7 @@
             transition-duration: 300ms;
             transition-property: color;
             &:hover {
-                color: #F0145A;
+                color: #f0145a;
             }
         }
         &_fb {
@@ -29,7 +29,7 @@
             transition-duration: 300ms;
             transition-property: fill;
             &:hover path {
-                fill: #F0145A;
+                fill: #f0145a;
             }
         }
         &_lang {
@@ -37,7 +37,7 @@
             padding-left: 0;
             list-style: none;
             & a {
-                color: #B3B3BA;
+                color: #b3b3ba;
                 text-align: center;
                 font-size: 12px;
                 font-weight: 700;
@@ -47,9 +47,9 @@
                 text-decoration: none;
                 padding: 5px 7px;
                 border-radius: 8px;
-            &.active {
-                background-color: $accent;
-            }
+                &.active {
+                    background-color: $accent;
+                }
             }
         }
     }
@@ -57,14 +57,14 @@
         grid-column: 1 / -1;
         display: flex;
         justify-content: space-between;
-        background: rgba(245, 245, 250, 0.20);
+        background: rgba(245, 245, 250, 0.2);
         margin: 0 -15px;
         padding: 10px 15px;
         &_adress {
             display: none;
         }
         &_phone {
-            color: var(--basic-white, #FFF);
+            color: var(--basic-white, #fff);
             text-align: right;
             font-size: 16px;
             font-weight: 700;
@@ -73,7 +73,7 @@
             transition-duration: 300ms;
             transition-property: color;
             &:hover {
-                color: #F0145A;
+                color: #f0145a;
             }
         }
         &_fb {
@@ -81,7 +81,7 @@
             transition-duration: 300ms;
             transition-property: fill;
             &:hover path {
-                fill: #F0145A;
+                fill: #f0145a;
             }
         }
         &_lang {
@@ -90,7 +90,7 @@
             list-style: none;
         }
         &_lang a {
-            color: var(--basic-white, #FFF);
+            color: var(--basic-white, #fff);
             text-align: center;
             font-size: 12px;
             font-weight: 700;
@@ -103,7 +103,7 @@
             transition-duration: 300ms;
             transition-property: background-color;
             &:hover {
-                background-color:rgba(255, 255, 255, 0.20);
+                background-color: rgba(255, 255, 255, 0.2);
             }
             &.active {
                 background-color: $accent;
@@ -115,9 +115,9 @@
         align-items: center;
         &_logo {
             & img {
-            display: block;
-            padding-top: 15px;
-            padding-right: 4px;
+                display: block;
+                padding-top: 15px;
+                padding-right: 4px;
             }
         }
         &_page {
@@ -137,21 +137,21 @@
         }
     }
     &__menu-about {
-        &_list{
+        &_list {
             display: none;
             list-style: none;
             & li {
-             margin-bottom: 15px;
+                margin-bottom: 15px;
             }
             & a {
-                color: #24A3FF;
+                color: #24a3ff;
                 text-align: right;
                 font-size: 16px;
                 font-weight: 700;
                 text-decoration: none;
                 padding: 5px 7px;
                 border-radius: 12px;
-                background:#F5F5FA;
+                background: #f5f5fa;
                 display: block;
                 text-align: center;
                 width: 100%;
@@ -160,7 +160,7 @@
                 transition-property: background-color, color;
                 &:hover {
                     color: red;
-                    background-color:#E6E6F0;
+                    background-color: #e6e6f0;
                 }
             }
         }
@@ -188,20 +188,17 @@
             background-color: transparent;
             border: none;
         }
-}
-
-
-
+    }
 
     &__menu {
-        &_list{
-           display: none;
-           list-style: none;
-           & li {
-            margin-bottom: 15px;
-           }
-           & a {
-                color: #FFF;
+        &_list {
+            display: none;
+            list-style: none;
+            & li {
+                margin-bottom: 15px;
+            }
+            & a {
+                color: #fff;
                 text-align: right;
                 font-size: 16px;
                 font-weight: 700;
@@ -215,9 +212,9 @@
                 transition-property: background-color, color;
                 &:hover {
                     color: red;
-                    background-color: rgba(255, 255, 255, 0.20);
+                    background-color: rgba(255, 255, 255, 0.2);
                 }
-           }
+            }
         }
         &_list-active {
             display: block;
@@ -236,7 +233,7 @@
             transition-duration: 300ms;
             transition-property: background-color;
             &:hover {
-                background-color:rgba(255, 255, 255, 0.20);
+                background-color: rgba(255, 255, 255, 0.2);
             }
         }
         &_btn-active {
@@ -254,16 +251,16 @@
     .header {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, min-content);
-        &__info-about{
+        &__info-about {
             justify-content: flex-start;
             margin: 0;
             padding: 50px 0 30px 0;
             background-color: transparent;
-            &_adress{
+            &_adress {
                 display: block;
                 display: inline-flex;
                 align-items: center;
-                color: #B3B3BA;
+                color: #b3b3ba;
                 text-align: right;
                 font-size: 16px;
                 font-weight: 400;
@@ -286,7 +283,7 @@
                     margin-left: 6px;
                 }
             }
-             &_phone {
+            &_phone {
                 display: inline-flex;
                 align-items: center;
                 &::after {
@@ -297,13 +294,13 @@
                     border-radius: 50%;
                     margin-right: 6px;
                     margin-left: 6px;
-                } 
-             }
+                }
+            }
             &_fb {
                 display: block;
             }
         }
-        &__info{
+        &__info {
             justify-content: flex-start;
             margin: 0;
             padding: 50px 0 30px 0;
@@ -312,7 +309,7 @@
                 display: block;
                 display: inline-flex;
                 align-items: center;
-                color: var(--basic-white, #FFF);
+                color: var(--basic-white, #fff);
                 text-align: right;
                 font-size: 16px;
                 font-weight: 400;
@@ -347,7 +344,7 @@
                     border-radius: 50%;
                     margin-right: 6px;
                     margin-left: 6px;
-                } 
+                }
             }
             &_fb {
                 display: block;
@@ -371,58 +368,58 @@
         }
 
         &__menu-about {
-            &_btn  {
+            &_btn {
                 display: none;
             }
-            &_list{
+            &_list {
                 display: flex;
                 list-style: none;
-                }
-                & a {
-                    text-align: right;
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height: normal;
-                    margin-right: 15px;
+            }
+            & a {
+                text-align: right;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: normal;
+                margin-right: 15px;
+                background-color: transparent;
+                transition-duration: 300ms;
+                transition-property: background-color;
+                &:hover {
                     background-color: transparent;
-                    transition-duration: 300ms;
-                    transition-property: background-color;
-                    &:hover {
-                        background-color: transparent;
-                    }
                 }
+            }
         }
 
         &__menu {
-            &_btn  {
+            &_btn {
                 display: none;
             }
-            &_list{
+            &_list {
                 display: flex;
                 list-style: none;
+            }
+
+            & a {
+                text-decoration: none;
+                color: var(--basic-white, #fff);
+                text-align: right;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: normal;
+                margin-right: 15px;
+                background-color: none;
+                &:hover {
+                    background-color: transparent;
                 }
-            
-                & a {
-                    text-decoration: none;
-                    color: var(--basic-white, #FFF);
-                    text-align: right;
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height: normal;
-                    margin-right: 15px;
-                    background-color: none;
-                    &:hover {
-                        background-color: transparent;
-                    }
-                } 
+            }
         }
     }
 }
 @media (min-width: 992px) {
-    .header{
+    .header {
         grid-template-columns: max-content 1fr;
         grid-template-rows: min-content min-content;
-        &__info-about{
+        &__info-about {
             grid-column: 2 / -1;
             justify-content: flex-end;
             padding: 50px 0 18px 0;
@@ -435,7 +432,7 @@
         &__logo-box {
             grid-row: 1 / -1;
             &_page {
-                &::before{
+                &::before {
                     width: 21px;
                 }
             }

@@ -5,8 +5,32 @@
 html {
     scroll-behavior: smooth;
 }
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus-visible {
+    left: 15px;
+    top: 15px;
+    width: auto;
+    height: auto;
+    padding: 10px 16px;
+    background-color: #323264;
+    color: #fff;
+    z-index: 999;
+    border-radius: 8px;
+}
+button:focus-visible,
+a:focus-visible {
+    outline: $focus-outline;
+    outline-offset: 2px;
+}
 .body {
-    font-family: 'Montserrat','Arial', sans-serif;
+    font-family: 'Montserrat', 'Arial', sans-serif;
     font-weight: 500;
     font-style: normal;
     background-color: #fff;

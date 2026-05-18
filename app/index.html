@@ -49,6 +49,7 @@
         <title>Document</title>
     </head>
     <body class="body">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
         <div class="gradient">
             <div class="container">
                 <header class="header">
@@ -56,7 +57,11 @@
                         <ul class="header__info_lang">
                             <li><a href="">ua</a></li>
                             <li><a href="">ru</a></li>
-                            <li><a class="active" href="">en</a></li>
+                            <li>
+                                <a class="active" href="" aria-current="page"
+                                    >en</a
+                                >
+                            </li>
                         </ul>
                         <div class="header__info_adress">
                             Kyiv, Mechnikova str., 14/1
@@ -67,6 +72,8 @@
                         <a
                             class="header__info_fb"
                             href="https://www.facebook.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <svg
                                 width="24"
@@ -96,26 +103,37 @@
                     </div>
                     <div class="header__logo-box">
                         <a class="header__logo-box_logo" href="#">
-                            <img src="./img/logo-1.svg" alt="Logo" />
+                            <img src="./img/logo-1.svg" alt="HLEGAL logo" />
                         </a>
                     </div>
-                    <nav class="header__menu">
+                    <nav class="header__menu" aria-label="Main navigation">
                         <button
                             class="header__menu_btn js-menu-btn"
                             type="button"
+                            aria-label="Open site menu"
+                            aria-expanded="false"
+                            aria-controls="main-menu"
+                            data-menu-target="main-menu"
                         ></button>
-                        <ul class="header__menu_list js-menu-list">
+                        <ul
+                            class="header__menu_list js-menu-list"
+                            id="main-menu"
+                        >
                             <li><a href="./about.html">about us</a></li>
                             <li><a href="#">services</a></li>
                             <li><a href="#">team</a></li>
                             <li><a href="#">publications</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><a href="./contact.html">contact</a></li>
                         </ul>
                     </nav>
                 </header>
                 <section class="title">
                     <h1 class="title__text">you legal solutions provider</h1>
-                    <a class="title__logo" href="#tabs">
+                    <a
+                        class="title__logo"
+                        href="#tabs"
+                        aria-label="Scroll to tabs section"
+                    >
                         <svg
                             class="title__logo_svg"
                             xmlns="http://www.w3.org/2000/svg"
@@ -802,7 +820,7 @@
                 </section>
             </div>
         </div>
-        <main>
+        <main id="main-content">
             <section class="slider">
                 <h3 class="visually-hidden"></h3>
                 <div class="container">

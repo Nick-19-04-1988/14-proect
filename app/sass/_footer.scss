@@ -1,5 +1,5 @@
 .footer {
-    background-color: #F5F5FA;
+    background-color: #f5f5fa;
     padding: 30px 0 30px 0;
     &__grid {
         display: grid;
@@ -10,7 +10,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            border-top: 2px solid #E6E6F0;
+            border-top: 2px solid #e6e6f0;
             width: 100%;
             padding-top: 30px;
             &-street {
@@ -33,7 +33,7 @@
                 transition-duration: 300ms;
                 transition-property: color;
                 &:hover {
-                    color: #F0145A;
+                    color: #f0145a;
                 }
             }
         }
@@ -47,30 +47,29 @@
                 text-decoration: none;
             }
             &-tel {
-                color: #46466E;
+                color: #46466e;
                 text-align: right;
                 font-size: 16px;
                 font-weight: 700;
                 line-height: normal;
             }
             &-mail {
-                color: #24A3FF;
+                color: #24a3ff;
                 font-size: 16px;
                 font-weight: 700;
                 line-height: normal;
                 transition-duration: 300ms;
                 transition-property: color;
                 &:hover {
-                    color: #F0145A;
+                    color: #f0145a;
                 }
             }
-
         }
         &_text {
             display: flex;
             flex-direction: column;
             align-items: center;
-            color: #B3B3BA;
+            color: #b3b3ba;
             text-align: center;
             font-size: 16px;
             font-weight: 400;
@@ -79,7 +78,7 @@
     }
 }
 .fb g:hover path {
-    fill: #F0145A;
+    fill: #f0145a;
 }
 
 @media (min-width: 768px) {
@@ -92,13 +91,13 @@
             &_connection {
                 flex-direction: row;
                 justify-content: center;
-                &-tel{
-                    &::after{
+                &-tel {
+                    &::after {
                         content: '';
                         display: inline-flex;
                         width: 6px;
                         height: 6px;
-                        background-color: #B3B3BA;
+                        background-color: #b3b3ba;
                         border-radius: 50%;
                         margin-right: 10px;
                         margin-left: 10px;
@@ -109,7 +108,7 @@
                         display: inline-flex;
                         width: 6px;
                         height: 6px;
-                        background-color: #B3B3BA;
+                        background-color: #b3b3ba;
                         border-radius: 50%;
                         margin-right: 10px;
                         margin-left: 10px;
@@ -127,7 +126,7 @@
                         content: '';
                         width: 6px;
                         height: 6px;
-                        background-color: #B3B3BA;
+                        background-color: #b3b3ba;
                         border-radius: 50%;
                         margin-right: 10px;
                         margin-left: 10px;
@@ -147,20 +146,20 @@
         &__grid {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: min-content min-content;
-            border-top: 2px solid #E6E6F0;
+            border-top: 2px solid #e6e6f0;
             width: 100%;
             padding-top: 30px;
             &_connection {
                 grid-column: -3 / -2;
                 flex-direction: row;
                 justify-content: flex-start;
-                &-tel{
-                    &::after{
+                &-tel {
+                    &::after {
                         content: '';
                         display: inline-flex;
                         width: 6px;
                         height: 6px;
-                        background-color: #B3B3BA;
+                        background-color: #b3b3ba;
                         border-radius: 50%;
                         margin-right: 10px;
                         margin-left: 10px;
@@ -171,7 +170,7 @@
                         display: inline-flex;
                         width: 6px;
                         height: 6px;
-                        background-color: #B3B3BA;
+                        background-color: #b3b3ba;
                         border-radius: 50%;
                         margin-right: 10px;
                         margin-left: 10px;
@@ -197,7 +196,7 @@
                         content: '';
                         width: 6px;
                         height: 6px;
-                        background-color: #B3B3BA;
+                        background-color: #b3b3ba;
                         border-radius: 50%;
                         margin-right: 10px;
                         margin-left: 10px;

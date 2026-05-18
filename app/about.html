@@ -49,6 +49,7 @@
         <title>Document</title>
     </head>
     <body class="body">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
         <div class="container">
             <header class="header">
                 <div class="header__info-about">
@@ -66,6 +67,8 @@
                     <a
                         class="header__info-about_fb"
                         href="https://www.facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <svg
                             width="24"
@@ -95,26 +98,37 @@
                 </div>
                 <div class="header__logo-box">
                     <a class="header__logo-box_logo" href="./index.html">
-                        <img src="./img/Logo-2.svg" alt="Logo" />
+                        <img src="./img/Logo-2.svg" alt="HLEGAL logo" />
                     </a>
                     <div class="header__logo-box_page">about us</div>
                 </div>
-                <nav class="header__menu-about">
+                <nav
+                    class="header__menu-about"
+                    aria-label="About page navigation"
+                >
                     <button
                         class="header__menu-about_btn js-menu-btn"
                         type="button"
+                        aria-label="Open page menu"
+                        aria-expanded="false"
+                        aria-controls="about-menu"
+                        data-menu-target="about-menu"
                     ></button>
-                    <ul class="header__menu-about_list js-menu-list">
+                    <ul
+                        class="header__menu-about_list js-menu-list"
+                        id="about-menu"
+                    >
+                        <li><a href="./index.html">home</a></li>
                         <li><a href="#">about us</a></li>
                         <li><a href="#">services</a></li>
                         <li><a href="#">team</a></li>
                         <li><a href="#">publications</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="./contact.html">contact</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
-        <main class="main">
+        <main id="main-content" class="main">
             <div class="container">
                 <section class="idea">
                     <h1 class="visually-hidden"></h1>
